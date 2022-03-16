@@ -6,7 +6,7 @@
 /*   By: mea <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/05 16:39:21 by mea               #+#    #+#             */
-/*   Updated: 2022/03/11 11:53:33 by mea              ###   ########.fr       */
+/*   Updated: 2022/03/16 13:23:54 by mea              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,5 +46,5 @@ int	main(int argc, char **argv)
 	signal(SIGUSR2, signal_handler);
 	signal(SIGUSR1, signal_handler);
 	while (1)
-		;
+		pause();
 }

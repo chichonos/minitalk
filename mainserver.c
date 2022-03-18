@@ -6,7 +6,7 @@
 /*   By: mea <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/05 16:39:21 by mea               #+#    #+#             */
-/*   Updated: 2022/03/16 13:23:54 by mea              ###   ########.fr       */
+/*   Updated: 2022/03/18 10:57:38 by mea              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,10 @@ void	signal_handler(int signal)
 	}
 }
 
-int	main(int argc, char **argv)
+int	main(void)
 {
 	pid_t	pid;
 
-	(void) argv;
-	(void) argc;
 	pid = getpid();
 	ft_printf("Server PID : %d\n", pid);
 	signal(SIGUSR2, signal_handler);
